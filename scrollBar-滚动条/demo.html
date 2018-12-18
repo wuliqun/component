@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SCROLLBAR DEMO page</title>
+	<style type="text/css">
+		body{
+			overflow:hidden;
+			height:100%;
+			margin:0;
+			padding:0;
+		}		
+		p{margin-bottom:10px;}		
+		.m-scrollbox{
+			position:fixed;
+			top:0;
+			right:0;
+			height:100%;
+			width:6px;
+			background-color:#eee;
+		}
+		.m-scrollbox .scrollbar{
+			width:6px;
+			border-radius:3px;
+			background-color:#49af4f;
+		}
+		.a,.b,.c,.d{
+			height:600px;
+		}
+		.a{
+			background-color:red;
+		}
+		.b{
+			background-color:green;
+		}
+		.c{
+			background-color:yellow;
+		}
+		.d{
+			background-color:grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+</body>
+<script src="../js/util.js"></script>
+<script src="scrollbar.js"></script>
+<script>
+	new ScrollBar().show();
+</script>
+</html>
